@@ -1,6 +1,4 @@
-
 import csv
-
 STOCK_PRICES = {
     "AAPL": 180,
     "TSLA": 250,
@@ -10,14 +8,12 @@ STOCK_PRICES = {
     "NFLX": 630,
     "META": 510,
 }
-
 def display_available_stocks():
     print("\n📈 Available Stocks:")
     print("-" * 30)
     for symbol, price in STOCK_PRICES.items():
         print(f"  {symbol:<8} → ${price}")
     print("-" * 30)
-
 def get_portfolio():
     portfolio = {}
     print("\n💼 Enter your stock holdings (type 'done' to finish):")
